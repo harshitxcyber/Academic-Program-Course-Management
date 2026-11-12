@@ -1,18 +1,16 @@
-CREATE TABLE bba_courses_1nf (
-    course_id VARCHAR(20),
-    semester VARCHAR(20),
-    s_no INT,
-    course_name VARCHAR(150),
-    course_objectives TEXT,
-    credits INT,
-    course_category VARCHAR(30),
-    PRIMARY KEY (course_id)
+
+CREATE TABLE Program_1NF (
+    Program_ID VARCHAR(5) PRIMARY KEY,
+    Program_Name VARCHAR(100),
+    Program_Credit INT,
+    Program_Level VARCHAR(10),
+    Program_Duration VARCHAR(20),
+    Term_Type VARCHAR(20),
+    Number_of_Terms INT
 );
 
-INSERT INTO bba_courses_1nf VALUES
-('BC21001','1st Semester',1,'Fundamentals of Management',
- 'Overview of management components and stakeholders',3,'Core'),
-('BC21002','1st Semester',2,'Introduction to Economics',
- 'Applications of economic concepts in business',3,'Core'),
-('BC22001','2nd Semester',1,'Introduction to Human Resource Management',
- 'Role and functions of HRM',3,'Core');
+INSERT INTO Program_1NF VALUES
+('P01', 'BBA', 40, 'UG', '1 Year', 'Semester', 2),
+('P02', 'MBA General', 43, 'PG', '1 Year', 'Trimester', 3),
+('P03', 'MBA Business Analytics', 46, 'PG', '1 Year', 'Trimester', 3),
+('P04', 'MBA Healthcare Management', 45, 'PG', '1 Year', 'Trimester', 3);

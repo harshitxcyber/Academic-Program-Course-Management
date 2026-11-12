@@ -1,18 +1,15 @@
-CREATE TABLE bba_courses_unf (
-    semester VARCHAR(20),
-    s_no INT,
-    course_id VARCHAR(20),
-    course_name VARCHAR(150),
-    course_objectives TEXT,
-    course_duration VARCHAR(20),
-    credits INT,
-    course_category VARCHAR(30)
+
+CREATE TABLE Program_UNF (
+    Program_Name VARCHAR(100),
+    Program_Credit INT,
+    Program_Level VARCHAR(10),
+    Program_Duration VARCHAR(20),
+    Term_Type VARCHAR(20),
+    Number_of_Terms INT
 );
 
-INSERT INTO bba_courses_unf VALUES
-('1st Semester', 1, 'BC21001', 'Fundamentals of Management',
- 'Overview of management components and stakeholders', NULL, 3, 'Core'),
-('1st Semester', 2, 'BC21002', 'Introduction to Economics',
- 'Applications of economic concepts in business', NULL, 3, 'Core'),
-('2nd Semester', 1, 'BC22001', 'Introduction to Human Resource Management',
- 'Role and functions of HRM', NULL, 3, 'Core');
+INSERT INTO Program_UNF VALUES
+('BBA', 40, 'UG', '1 Year', 'Semester', 2),
+('MBA General', 43, 'PG', '1 Year', 'Trimester', 3),
+('MBA Business Analytics', 46, 'PG', '1 Year', 'Trimester', 3),
+('MBA Healthcare Management', 45, 'PG', '1 Year', 'Trimester', 3);
